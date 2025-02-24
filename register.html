@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="register.css"> <!-- 引入 CSS 文件 -->
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="网站 Logo" class="logo">
+        <h2>用户注册</h2>
+        <form id="register-form">
+            <label for="register-student-id">学号:</label>
+            <input type="text" id="register-student-id" name="student_id" required>
+
+            <label for="register-username">用户名:</label>
+            <input type="text" id="register-username" name="username" required>
+
+            <label for="register-password">密码:</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <button type="submit">注册</button>
+        </form>
+        <p>已有账号？<a href="log_in.html">登录</a></p>
+    </div>
+</body>
+</html>
