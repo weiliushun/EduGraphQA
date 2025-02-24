@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="log_in.css"> <!-- 引入 CSS 文件 -->
+</head>
+<body>
+    <div class="container">
+        <!-- 登录界面 -->
+        <div class="login-container" id="login-container">
+            <img src="logo.png" alt="网站 Logo" class="logo">
+            <h2>用户登录</h2>
+            <form id="login-form">
+                <label for="login-student-id">学号:</label>
+                <input type="text" id="login-student-id" name="student_id" required>
+                
+                <label for="login-password">密码:</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit">登录</button>
+            </form>
+            <p>没有账号？<a href="register.html" id="to-register">注册</a></p>
+        </div>
+
+        <!-- 注册界面 -->
+        <div class="register-container" id="register-container" style="display: none;">
+            <h2>用户注册</h2>
+            <form id="register-form">
+                <label for="register-student-id">学号:</label>
+                <input type="text" id="register-student-id" name="student_id" required>
+                
+                <label for="register-username">用户名:</label>
+                <input type="text" id="register-username" name="username" required>
+                
+                <label for="register-password">密码:</label>
+                <input type="password" id="register-password" name="password" required>
+                
+                <button type="submit">注册</button>
+            </form>
+            <p>已有账号？<a href="#" id="to-login">登录</a></p>
+        </div>
+    </div>
+    <script src="log_in.js"></script> <!-- 引入 JavaScript 文件 -->
+</body>
+</html>
